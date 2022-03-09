@@ -1,5 +1,5 @@
 @import "./fonts.css";
-
+/*Общие классы*/
 body {
     margin: 0;
     padding: 0;
@@ -14,23 +14,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
 .container {
     max-width: 1020px;
     padding: 0 10px;
     margin: 0 auto;
-}
-@media (max-width: 1200px) {
-    .container {
-        max-width: 1100px;
-        padding: 0 10px;
-    }
-}
-.h-100 {
-    height: 100%;
 }
 .justify-center {
     justify-content: center;
@@ -48,11 +35,31 @@ button {
     border: none;
     background: none;
 }
+/*Общие классы*/
+
 /*header section*/
 .header {
     width: 100%;
     height: 80px;
     position: absolute;
+}
+.btn_fixed {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    border: black solid 2px;
+    transition: 0.3s;
+}
+.btn_fixed:hover {
+    background: rgba(37, 43, 66, 0.35);
 }
 .header .container {
     height: 100%;
@@ -75,7 +82,6 @@ button {
     letter-spacing: 0.1px;
     color: #ffffff;
 }
-
 /*header section*/
 
 /*hero section*/
@@ -123,9 +129,10 @@ button {
     width: 250px;
     height: 70px;
     border: 2px solid #ffffff;
+    transition: 0.3s;
 }
 .hero_btn:hover {
-    background: rgba(215, 213, 213, 0.5);
+    background: rgba(37, 43, 66, 0.35);
 }
 .hero_icons {
     font-size: 30px;
@@ -137,8 +144,8 @@ button {
 .fa-solid {
     margin-right: 20px;
 }
-
 /*hero section*/
+
 /*services section*/
 .services {
     padding: 100px 0;
@@ -188,7 +195,7 @@ button {
 .card_time {
     margin: 15px 0;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.1px;
     color: #252B42;
 }
@@ -228,14 +235,10 @@ button {
     width: 250px;
     height: 70px;
     border: 2px solid #252B42;
+    transition: 0.3s;
 }
 .services_btn:hover {
-    background: rgba(37, 43, 66, 0.5);
-}
-/*services section*/
-/*info section*/
-.info {
-    padding: 50px 0;
+    background: rgba(37, 43, 66, 0.35);
 }
 .services_btn:before {
     content: "";
@@ -255,6 +258,12 @@ button {
     right: -50px;
     background: rgb(123, 120, 112);
 }
+/*services section*/
+
+/*info section*/
+.info {
+    padding: 50px 0;
+}
 .info_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -265,7 +274,6 @@ button {
     text-align: center;
     width: 225px;
 }
-
 .info_icons {
     text-align: center;
     font-size: 60px;
@@ -280,6 +288,8 @@ button {
     color: #7c7870;
 }
 /*info section*/
+
+/*content section*/
 .content {
     margin-top: 50px;
 }
@@ -288,10 +298,10 @@ button {
 }
 .content_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .conten_card {
-    margin-left: 100px;
+   margin: 0 auto 20px;
 }
 .content_img{
     width: 800px;
@@ -305,3 +315,61 @@ button {
     height: 100%;
     object-fit: cover;
 }
+/*content section*/
+
+/*footer section*/
+.footer {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.footer-top_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #252B42;
+}
+.footer_partners {
+    width: 100%;
+    margin: 50px 0 50px;
+}
+.footer_card {
+    width: 100px;
+    height: 50px;
+}
+.footer_card img {
+    height: 100%;
+    width: 100%;
+}
+.footer_maps {
+}
+.footer_bottom {
+    padding: 30px 0 30px;
+    background: #252B42;
+    text-align: center;
+}
+.footer-bottom_number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+}
+.footer-bottom_add {
+    margin: 5px 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+}
+.footer-bottom_title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+}
+/*footer section*/
