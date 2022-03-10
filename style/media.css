@@ -182,8 +182,12 @@
     }
     .footer_mobile_map {
         display: inline-block;
-        width: 360px;
+        max-width: 390px;
         margin: 0 auto;
+    }
+    .footer_card img {
+        height: 100%;
+        width: 100%;
     }
     .footer_bootom {
         padding: 15px 0 15px;
@@ -205,5 +209,6 @@
         height: 90px;
         font-size: 14px;
         right: 20px;
+        bottom: 40px;
     }
 }
