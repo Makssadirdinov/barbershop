@@ -1,7 +1,6 @@
 @import "./fonts.css";
 /*Общие классы*/
 body {
-    min-width: 1020px;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -53,7 +52,6 @@ button {
     border-radius: 50%;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
     letter-spacing: 0.1px;
     color: #000000;
     border: black solid 2px;
@@ -70,7 +68,7 @@ button {
 .header_add {
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #ffffff;
@@ -78,7 +76,7 @@ button {
 .header_phone {
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #ffffff;
@@ -124,7 +122,6 @@ button {
 .hero_btn {
     font-weight: 700;
     font-size: 25px;
-    line-height: 20px;
     color: #ffffff;
     border-radius: 5px;
     width: 250px;
@@ -136,7 +133,7 @@ button {
     background: rgba(37, 43, 66, 0.35);
 }
 .hero_icons {
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     height: 100px;
     top: 0;
@@ -149,7 +146,7 @@ button {
 
 /*services section*/
 .services {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .services_title {
     font-weight: 700;
@@ -163,7 +160,7 @@ button {
     padding: 20px 0 80px;
     margin: 0 auto 0;
     text-align: center;
-    width: 500px;
+    max-width: 500px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -177,7 +174,7 @@ button {
 }
 .services_card {
     margin: 0 auto 0;
-    width: 800px;
+    max-width: 800px;
 }
 .card_title {
     font-weight: 700;
@@ -202,7 +199,7 @@ button {
 }
 .card_subtitle {
     position: relative;
-    width: 600px;
+    max-width: 800px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -212,7 +209,7 @@ button {
 .card_subtitle:before {
     content: "";
     position: absolute;
-    width: 800px;
+    max-width: 800px;
     height: 1px;
     bottom: -23px;
     left: 0;
@@ -230,7 +227,6 @@ button {
     position: relative;
     font-weight: 700;
     font-size: 20px;
-    line-height: 20px;
     color: #252B42;
     border-radius: 5px;
     width: 250px;
@@ -246,7 +242,7 @@ button {
     position: absolute;
     width: 1px;
     height: 250px;
-    bottom: -350px;
+    bottom: -302px;
     left: -45px;
     background: rgb(123, 120, 112);
 }
@@ -255,7 +251,7 @@ button {
     position: absolute;
     width: 1px;
     height: 250px;
-    bottom: -350px;
+    bottom: -302px;
     right: -50px;
     background: rgb(123, 120, 112);
 }
@@ -273,15 +269,15 @@ button {
 .info_card {
     margin-left: 52px;
     text-align: center;
-    width: 225px;
+    max-width: 225px;
 }
 .info_icons {
     text-align: center;
     font-size: 60px;
     color: #252B42;
+    margin-bottom: 20px;
 }
 .info_subtitle {
-    margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -302,11 +298,11 @@ button {
     grid-template-columns: 1fr;
 }
 .conten_card {
-   margin: 0 auto 20px;
+    margin: 0 auto 20px;
 }
 .content_img{
-    width: 800px;
-    height: 500px;
+    max-width: 800px;
+    max-height: 500px;
 }
 .content_img img {
     border-radius: 10px;
@@ -323,6 +319,7 @@ button {
     padding-top: 100px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .footer-top_title {
     font-weight: 700;
@@ -333,6 +330,7 @@ button {
     color: #252B42;
 }
 .footer_partners {
+    justify-content: space-between;
     width: 100%;
     margin: 50px 0 50px;
 }
@@ -345,6 +343,11 @@ button {
     width: 100%;
 }
 .footer_maps {
+    width: 100%;
+    height: 100%;
+}
+.footer_mobile_map {
+    display: none;
 }
 .footer_bottom {
     padding: 30px 0 30px;
