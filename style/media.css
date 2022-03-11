@@ -18,6 +18,13 @@
     .hero {
         padding: 325px 0 60px;
     }
+    .conten_card {
+        margin: 0 auto 20px;
+    }
+    .content_img{
+        max-width: 700px;
+        max-height: 400px;
+    }
     .services_btn:before {
         left: 0;
     }
@@ -40,12 +47,10 @@
     .footer_maps {
         margin-left: -60px;
     }
-    .footer_mobile_map {
-        display: none;
-    }
     .footer_bottom {
-        max-width: none;
+        width: 100%;
     }
+
 }
 @media (max-width:420px) {
     .container {
@@ -55,36 +60,49 @@
         height: 65px;
     }
     .header_add, .header_phone {
-        font-size: 12px;
+        font-size: 15px;
+        color: #252B42;
     }
     .header .fa-solid {
         display: none;
     }
     .hero {
-        padding: 140px 0 0;
+        padding: 215px 0 0;
     }
     .hero_title {
         font-size: 60px;
         line-height: 60px;
+        color: #ffffff;
     }
+    .hero_title:before {
+        background: #ffffff;
+        width: 300px;
+    }
+
     .hero_subtitle {
+        font-weight: 400;
         font-size: 16px;
-        line-height: 18px
+        line-height: 18px;
+        color: #ffffff;
     }
     .hero_btn {
-        font-weight: 400;
+        font-weight: 700;
         font-size: 20px;
         line-height: 15px;
         width: 180px;
         height: 50px;
+        background: rgba(40, 40, 40, 0.5);
     }
     .hero_icons {
         font-size: 20px;
-        color: #252b42;
+        color: #252B42;
         height: 49px;
     }
     .services {
         padding: 30px 0;
+    }
+    .services .d-flex {
+        flex-direction: column;
     }
     .services_title {
         font-size: 30px;
@@ -101,7 +119,8 @@
         line-height: 20px
     }
     .services_price {
-        font-size: 16px;
+        margin-top: 5px;
+        font-size: 14px;
         line-height: 20px
     }
     .card_time {
@@ -146,16 +165,9 @@
         margin: 0 auto;
         background: rgb(123, 120, 112);
     }
-    .info_card:before:not(:first-child) {
-        content: "";
-        position: absolute;
-        max-width: 300px;
-        height: 1px;
-        bottom: -31px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        background: rgb(123, 120, 112);
+
+    .content_grid {
+        grid-row-gap: 0;
     }
     .content_img {
         height: 240px;
@@ -182,14 +194,15 @@
     }
     .footer_mobile_map {
         display: inline-block;
-        max-width: 390px;
+        max-width: 370px;
+        width: 100%;
         margin: 0 auto;
     }
     .footer_card img {
         height: 100%;
         width: 100%;
     }
-    .footer_bootom {
+    .footer_bottom {
         padding: 15px 0 15px;
     }
     .footer-bottom_number {
@@ -210,5 +223,6 @@
         font-size: 14px;
         right: 20px;
         bottom: 40px;
+        background: rgba(143, 139, 139, 0.35);
     }
 }
