@@ -4,7 +4,7 @@
 
 @media (max-width:820px) {
     .container {
-        max-width: 700px;
+        max-width: 790px;
     }
     .header {
         height: 100px;
@@ -51,7 +51,7 @@
         display: none;
     }
     .footer_maps {
-        margin-left: -60px;
+       display: block;
     }
     .footer_bottom {
         width: 100%;
