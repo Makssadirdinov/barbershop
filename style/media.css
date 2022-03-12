@@ -44,6 +44,12 @@
     .info_icons {
         margin-bottom: 20px;
     }
+    .footer_mobile_maps {
+        display: none;
+    }
+    .footer_mini_maps {
+        display: none;
+    }
     .footer_maps {
         margin-left: -60px;
     }
@@ -165,7 +171,6 @@
         margin: 0 auto;
         background: rgb(123, 120, 112);
     }
-
     .content_grid {
         grid-row-gap: 0;
     }
@@ -192,15 +197,11 @@
     .footer_maps {
         display: none;
     }
-    .footer_mobile_map {
-        display: inline-block;
-        max-width: 370px;
-        width: 100%;
-        margin: 0 auto;
+    .footer_mini_maps {
+        display: none;
     }
-    .footer_card img {
-        height: 100%;
-        width: 100%;
+    .footer_mobile_maps {
+        display: block;
     }
     .footer_bottom {
         padding: 15px 0 15px;
@@ -224,5 +225,16 @@
         right: 20px;
         bottom: 40px;
         background: rgba(143, 139, 139, 0.35);
+    }
+}
+@media (max-width:360px) {
+    .container {
+        max-width: 340px;
+    }
+    .footer_mobile_maps {
+        display: none;
+    }
+    .footer_mini_maps {
+        display: block;
     }
 }
